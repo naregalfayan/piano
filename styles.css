@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.piano {
+  position: relative;
+  display: flex;
+}
+
+.key {
+  width: 60px;
+  height: 200px;
+  border: 1px solid #979797;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.black {
+  background-color: #000;
+  position: absolute;
+  z-index: 1;
+  color: #fff;
+}
+
+[data-note="C#"] {
+  width: 40px;
+  height: 120px;
+  left: 42px;
+}
+
+[data-note="D#"] {
+  width: 40px;
+  height: 120px;
+  left: 104px;
+}
+
+[data-note="F#"] {
+  width: 40px;
+  height: 120px;
+  left: 226px;
+}
+
+[data-note="G#"] {
+  width: 40px;
+  height: 120px;
+  left: 288px;
+}
+
+[data-note="A#"] {
+  width: 40px;
+  height: 120px;
+  left: 352px;
+}
+
+button#startButton {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
